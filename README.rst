@@ -102,7 +102,7 @@ Usage
 
     Usage: ness [OPTIONS] [OUTPUT]
 
-      Use Network Enhanced Similarity Search (NESS), located at this repository: `NESS`_.
+      Use Network Enhanced Similarity Search (NESS), located at this repository: `NESS`_. [NESS](#https://github.com/treynr/ness/tree/master)
       To integrate all heterogeneous datasets and calculate
       diffusion metrics over the heterogeneous network using a random
       walk with restart.
