@@ -97,17 +97,20 @@ Edge lists contains KEGG gene networks
 
 Usage
 -----
+Network Enhanced Similarity Search (`NESS <https://github.com/treynr/ness/tree/master>`_) is the
+random walk framework used in this study. Here, I will go over some of the commands to create networks
+and conduct permutation testing using the graphs in this repository.
 
 .. code:: text
 
     Usage: ness [OPTIONS] [OUTPUT]
 
-      Use Network Enhanced Similarity Search (NESS), 
+      Use NESS, 
       To integrate all heterogeneous datasets and calculate
       diffusion metrics over the heterogeneous network using a random
       walk with restart.
 
-`NESS <https://github.com/treynr/ness/tree/master>`_
+
 
 For example, to create a multi-species KEGG network. Note: you will use all edgelists in the
 *all_graphs* folder for the multi-species heterogeneous network and use only single species
