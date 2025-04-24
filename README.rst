@@ -102,12 +102,12 @@ Usage
 
     Usage: ness [OPTIONS] [OUTPUT]
 
-      Use Network Enhanced Similarity Search (NESS), located at this repository: NESS__.
+      Use Network Enhanced Similarity Search (NESS), located at this repository: `NESS`_.
       To integrate all heterogeneous datasets and calculate
       diffusion metrics over the heterogeneous network using a random
       walk with restart.
 
-.. __: https://github.com/treynr/ness/tree/master
+.. _NESS: https://github.com/treynr/ness/tree/master
 
 For example, to create a multi-species KEGG network. Note: you will use all edgelists in the
 *all_graphs* folder for the multi-species heterogeneous network and use only single species
