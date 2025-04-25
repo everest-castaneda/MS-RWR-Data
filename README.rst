@@ -47,8 +47,8 @@ Edge lists contains GO annotations
 Genesets
 ''''''''''
 
-Edge lists, denoted as *gw_gs_...tsv*, contains geneset
-gene
+Edge lists, denoted as *gw_gs_\*.tsv*, contains geneset
+to gene lists.
 
 .. csv-table:: Example edge list
     :header: geneset, gene
@@ -60,7 +60,7 @@ gene
 Genesets to Ontology
 ''''''''''
 
-Edge lists, denoted as *gw_gs_.._ont.tsv*, contains genesets
+Edge lists, denoted as *gw_gs_\*_ont.tsv*, contains genesets
 and accompanying ontology terms
 
 .. csv-table:: Example edge list
