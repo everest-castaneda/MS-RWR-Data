@@ -148,4 +148,6 @@ all node results are given.
 
     $ ness -e heterogenous_graph.tsv -r 0.25 -d -p 1000 --seed-file sud_genes/AUDgenes.txt results.tsv
 
-
+The *results* folder contains filtered and ready walk interactions for further analyses and the
+*\*_kegg_semantics* folder contains all unfiltered results for KEGG semantic scoring, alongside
+ontologies for semantic similarity testing.
