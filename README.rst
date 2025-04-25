@@ -125,8 +125,8 @@ Note: Use same approach for mice, mmu, and rat, rno, but make sure to change end
 
 .. code:: text
 
-    $ ness -a all_graphs/annotations_hsa.tsv -e all_graphs/biogrid_network_hsa.tsv -o all_graphs/go_subgraph_200.tsv -g all_graphs/gw_gs_hsa.tsv
-      -a all_graphs/gw_gs_hsa_ont.tsv -e all_graphs/kegg_network_hsa.tsv --graph hsa_graph.tsv
+    $ ness -a all_graphs/annotations_hsa.tsv -e all_graphs/biogrid_network_hsa.tsv -o all_graphs/go_subgraph_200.tsv 
+      -g all_graphs/gw_gs_hsa.tsv -a all_graphs/gw_gs_hsa_ont.tsv -e all_graphs/kegg_network_hsa.tsv --graph hsa_graph.tsv
 
 For conducting the random walk with restart over the network with a restart probability of 0.25 and 
 distributing the walk over all cores
@@ -135,7 +135,7 @@ distributing the walk over all cores
 
     $ ness -e heterogenous_graph.tsv -r 0.25 -d results.tsv
 
-For conducting graph permutation analyses with a walk restart probability of 0.25
+For conducting graph permutation analyses, 1000 permutations, with a walk restart probability of 0.25
 
 .. code:: text
 
