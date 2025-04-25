@@ -105,21 +105,28 @@ and conduct permutation testing using the graphs in this repository.
 
     Usage: ness [OPTIONS] [OUTPUT]
 
-      Use NESS, 
-      To integrate all heterogeneous datasets and calculate
+      Use NESS to integrate all heterogeneous datasets and calculate
       diffusion metrics over the heterogeneous network using a random
       walk with restart.
 
-
-
-For example, to create a multi-species KEGG network. Note: you will use all edgelists in the
-*all_graphs* folder for the multi-species heterogeneous network and use only single species
-for each single species network. The below code is just a small example, but please follow
-the repository's directions for all flags for each graph input.
+For example, creating multi-species graph
 
 .. code:: text
 
-    $ ness -e kegg_network_hsa.tsv -e kegg_network_mmu.tsv -e kegg_network_rno.tsv --graph results.tsv
+    $ ness -a all_graphs/annotations_hsa.tsv -a all_graphs/annotations_mmu.tsv -a all_graphs/annotations_rno.tsv 
+      -e all_graphs/biogrid_network_hsa.tsv -e all_graphs/biogrid_network_mmu.tsv -e all_graphs/biogrid_network_rno.tsv 
+      -o all_graphs/go_subgraph_200.tsv -g all_graphs/gw_gs_hsa.tsv -g all_graphs/gw_gs_mmu.tsv -g all_graphs/gw_gs_rno.tsv 
+      -a all_graphs/gw_gs_hsa_ont.tsv -a all_graphs/gw_gs_mmu_ont.tsv -a all_graphs/gw_gs_rno_ont.tsv -h all_graphs/hom_clusters.tsv 
+      -h all_graphs/homology_edgelist.tsv -e all_graphs/kegg_network_hsa.tsv -e kegg_network_mmu.tsv -e kegg_network_rno.tsv 
+      --graph ms_heterogeneous_graph.tsv
+
+Single species graph creation for humans.
+Note: Use same approach for mice, mmu, and rat, rno, but make sure to change ending string to the right species.
+
+.. code:: text
+
+    $ ness -a all_graphs/annotations_hsa.tsv -e all_graphs/biogrid_network_hsa.tsv -o all_graphs/go_subgraph_200.tsv -g all_graphs/gw_gs_hsa.tsv
+      -a all_graphs/gw_gs_hsa_ont.tsv -e all_graphs/kegg_network_hsa.tsv --graph hsa_graph.tsv
 
 For conducting the random walk with restart over the network with a restart probability of 0.25 and 
 distributing the walk over all cores
